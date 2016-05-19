@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="np.com.rijaldinesh.www.sctnetworkalpha">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission
+        android:name="com.prgguru.example.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.prgguru.example.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- GCM Permissions - End here  -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/luncher_icon"
+        android:supportsRtl="true"
+        android:label="@string/app_name"
+        >
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="np.com.rijaldinesh.www.sctnetworkalpha.gmsvision.MultiTrackerActivity"
+
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="fullSensor"/>
+        <activity  android:theme="@style/AppTheme"
+            android:name=".qrcodereader.DecoderActivity"/>
+        <activity android:theme="@style/AppTheme"
+            android:name=".qrcodereader.AndroidBarcodeQrExample"/>
+        <activity
+            android:theme="@style/AppThemeQRGeneratiopn"
+            android:name=".qrcodegenerator.GenerateQRCodeActivity"/>
+        <activity android:name=".gridtest.MainGridTest"/>
+        <activity
+            android:theme="@style/AppTheme"
+            android:name=".register.SCTMain"></activity>
+        <activity android:name=".gcm.GCMMainActivity"/>
+        <activity android:name=".gcm.HomeActivity"/>
+        <activity android:name=".register.Register"
+            android:theme="@style/AppTheme"/>
+        <!-- SCTMain Service -->
+        <receiver
+            android:name=".gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="np.com.rijaldinesh.pushgcm" />
+            </intent-filter>
+        </receiver>
+        <!-- Register Service -->
+        <service android:name="gcm.GCMNotificationIntentService" />
+    </application>
+</manifest>

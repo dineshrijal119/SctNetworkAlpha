@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/social_share"
+        android:icon="@drawable/share_black"
+        android:title="action_settings"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/menu_iteam_black_twentyfour"
+        android:title="action_settings"
+        app:showAsAction="always" >
+
+<menu>
+    <item android:id="@+id/test"
+        android:title="Checking"
+        android:icon="@drawable/social_share"></item>
+    <item android:id="@+id/testone"
+        android:title="Checking Firest"
+        android:icon="@drawable/social_share"></item>
+    <item android:id="@+id/testtwo"
+        android:title="Checking Second"
+        android:icon="@drawable/social_share"></item>
+</menu>
+
+    </item>
+</menu>

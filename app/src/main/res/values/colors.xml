@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#c7bf45</color>
+    <color name="colorPrimaryDark">#c7bf45</color>
+    <color name="colorAccent">#68c0f5</color>
+    <color name="colorRiple">#f1e200</color>
+    <color name="background">#68c0f5</color>
+    <color name="ripple">#248ece</color>
+    <color name="backgroundQrGenerator">#9dd0ef</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="qrgeneratorbackground">#E0F2F1</color>
+
+    <!--GCM-->
+    <color name="bg_gradient_start">#3990CA</color>
+    <color name="bg_gradient_end">#15547E</color>
+    <color name="bg_button_login">#1D394C</color>
+    <color name="colorsAccent">#3990CA</color>
+</resources>

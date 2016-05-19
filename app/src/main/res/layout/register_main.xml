@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#070a29"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <np.com.rijaldinesh.www.sctnetworkalpha.custumclasses.RoundImage
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/logo" />
+
+    <!-- First Name Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        >
+
+        <EditText
+
+            android:id="@+id/input_name_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="First Name"
+            android:textAlignment="center"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+    <!--Last Name-->
+    <android.support.design.widget.TextInputLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/input_name_last"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:textAlignment="center"
+            android:hint="Last Name"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+    <!--Cell phone-->
+    <android.support.design.widget.TextInputLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/input_cell_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@android:color/transparent"
+            android:textAlignment="center"
+            android:hint="Cell Phone"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Email Label -->
+    <android.support.design.widget.TextInputLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@android:color/transparent"
+            android:textAlignment="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+    <!--confirm email-->
+    <android.support.design.widget.TextInputLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:backgroundTint="@android:color/transparent"
+            android:textAlignment="center"
+            android:id="@+id/input_email_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Confirm Email"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!-- Signup Button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circular_rectangle">
+    <android.support.v7.widget.AppCompatButton
+
+        android:id="@+id/btn_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="Register" /></FrameLayout>
+
+</LinearLayout>
